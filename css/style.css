@@ -1,10 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Oxygen&Montserrat&family=Roboto&family=Open+Sans+Condensed:wght@300&display=swap");
+
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: #2f3240;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  letter-spacing: 0.000003rem;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
 main {
-  width: 800px;
+  width: 1024px;
   margin: 0 auto;
+  display: flex;
+}
+
+.content {
+  padding: 50px;
+  background-color: "#fff";
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header__info__name,
+.header__info__job-title {
+  margin: 5px 0px;
+}
+
+.header__info__job-title {
+  letter-spacing: 2px;
+  color: #434c5e;
+  opacity: 0.5;
+}
+
+.header__avatar-container {
+  margin-right: 25px;
+}
+
+.header__avatar-container img {
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
+}
+
+.header__info__job-title {
+  text-transform: uppercase;
+}
+
+.section__title {
+  text-transform: uppercase;
+}
+
+.section__item__subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.section.section--certificates .section__item__subtitle {
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+.about {
+  width: 700px;
+  padding: 40px;
+  background-color: #2e3440;
+  color: #d8dee9;
+}
+
+.techs,
+.contact-info {
+  list-style-type: none;
+  padding-left: 0;
 }
