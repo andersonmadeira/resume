@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=family=Oxygen&Montserrat&family=Roboto&family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&family=Oxygen&Montserrat&family=Roboto&family=Open+Sans+Condensed:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
@@ -12,8 +12,17 @@ body {
 }
 
 body {
+  background-color: #F8F9FB;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Rubik", sans-serif;
 }
 
 h1 {
@@ -77,6 +86,7 @@ main {
 }
 
 .section__title {
+  margin-top: 2.5rem;
   text-transform: uppercase;
 }
 
@@ -89,6 +99,20 @@ main {
 .section.section--certificates .section__item__subtitle {
   opacity: 0.8;
   text-transform: capitalize;
+}
+
+.section__item__keywords {
+  padding-left: 0;
+}
+
+.section__item__keywords li {
+  background-color: #ECEEF4;
+  border-radius: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  display: inline-block;
+  margin: 0px 5px;
 }
 
 .about {
