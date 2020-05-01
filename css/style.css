@@ -103,3 +103,48 @@ main {
   list-style-type: none;
   padding-left: 0;
 }
+
+.tech__name {
+  margin: 5px 0px;
+}
+
+.tech__value {
+  --background: #3B4252;
+  --optimum: #5E81AC;
+  --sub-optimum: #5E81AC;
+  --sub-sub-optimum: #5E81AC;
+
+  background: var(--background);
+  display: block;
+  height: 5px;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.tech__value::-webkit-meter-bar {
+  background: var(--background);
+}
+
+.tech__value:-moz-meter-optimum::-moz-meter-bar {
+  background: var(--optimum);
+}
+
+.tech__value::-webkit-meter-optimum-value {
+  background: var(--optimum);
+}
+
+.tech__value:-moz-meter-sub-optimum::-moz-meter-bar {
+  background: var(--sub-optimum);
+}
+
+.tech__value::-webkit-meter-suboptimum-value {
+  background: var(--sub-optimum);
+}
+
+meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+  background: var(--sub-sub-optimum);
+}
+
+.tech__value::-webkit-meter-even-less-good-value {
+  background: var(--sub-sub-optimum);
+}
