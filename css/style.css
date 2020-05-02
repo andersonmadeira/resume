@@ -90,10 +90,24 @@ main {
   text-transform: uppercase;
 }
 
+.section__item {
+  margin-top: 40px;
+}
+
 .section__item__subtitle {
   text-transform: uppercase;
   font-weight: bold;
   opacity: 0.5;
+}
+
+.section__item__description__list {
+  padding-left: 20px;
+  list-style-type: square;
+}
+
+.section__item__description__list li {
+  margin: 5px 0px;
+  font-size: 1rem;
 }
 
 .section.section--certificates .section__item__subtitle {
@@ -112,14 +126,25 @@ main {
   font-size: 1.2rem;
   padding: 5px 15px;
   display: inline-block;
-  margin: 0px 5px;
+  margin: 5px;
 }
 
 .about {
+  font-size: 1rem;
   width: 700px;
   padding: 40px;
   background-color: #2e3440;
   color: #d8dee9;
+}
+
+.about a,
+.about a:active,
+.about a:visited {
+  color: #d8dee9;
+}
+
+.about a:hover {
+  opacity: 0.75;
 }
 
 .techs,
